@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 2rem;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #0a12abd2;
+  --second-color: #2d0223;
+}
+
+section {
+  padding: 50px 10%;
+}
+
+*::selection {
+  color: #fff;
+  background: var(--main-color);
+}
+
+img {
+  width: 100%;
+}
+h6{
+  color: rgb(109, 255, 4);
+  font-size: 25px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: pink;
+  box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+  padding: 15px 10px;
+  transition: 0.2s;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.navbar {
+  display: flex;
+  
+}
+
+.navbar a {
+  font-size: 1rem;
+  padding: 11px 20px;
+  color: rgb(4, 4, 4);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+  display: none;
+}
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #b5a0883d;
+  gap: 1rem;
+}
+
+.home-text {
+  flex: 1 1 17rem;
+}
+
+.home-img {
+  flex: 1 1 17rem;
+}
+
+.home-img img {
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-11px, 0);
+  }
+  50% {
+    transform: translate(-0px, -11px);
+  }
+  100% {
+    transform: translate(-11px, 0);
+  }
+}
+
+.home-text span {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--second-color);
+}
+
+.home-text h1 {
+  font-size: 3.2rem;
+  color: red;
+  font-weight: bolder;
+}
+
+.home-text h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--second-color);
+  margin: 0.5rem 0 1.4rem;
+  text-transform: uppercase;
+}
+
+.btn {
+  padding: 7px 16px;
+  border: 2px solid var(--second-color);
+  border-radius: 40px;
+  color: var(--second-color);
+  font-weight: 500;
+}
+
+.btn:hover {
+  color: #fff;
+  background: var(--second-color);
+}
+
+/* Courses */
+
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--second-color);
+}
+
+.heading h1 {
+  font-size: 1rem;
+  color: rgb(202, 15, 46)
+}
+
+.Courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.Courses-container .box {
+  flex: 1 1 10rem;
+  background: var(--main-color);
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+}
+
+.Courses-container .box .box-img {
+  width: 150px;
+  height: 150px;
+  margin-top: -100px;
+}
+
+.Courses-container .box .box-img img {
+  width: 100%;
+  height: 133%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.stars {
+  margin: 1rem 0 0.1rem;
+}
+
+.Courses-container .box .stars .bx {
+  color: #ebdbc8;
+}
+
+.Courses-container .box h2 {
+  color: #ebdbc8;
+  font-size: 1.2rem;
+}
+
+.Courses-container .box span {
+  color: #ebdbc8;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0.2rem 0 0.5rem;
+}
+
+.box .btn {
+  border: 2px solid #ebdbc8;
+  color: #ebdbc8;
+}
+
+.box .btn:hover {
+  background: #ebdbc8;
+  color: var(--second-color);
+}
+.nopaid{
+  color: #151517;
+}
+/* Delivery */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.delivery-img,
+.app-img {
+  flex: 0 1 21rem;
+}
+
+.delivery-text,
+.app-text {
+  flex: 1 1 21rem;
+}
+
+.delivery-text h2,
+.app-text h2 {
+  font-size: 1.2rem;
+  color: var(--second-color);
+}
+.delivery-text p,
+.app-text p {
+  margin: 0.5rem 0 1rem;
+  text-align: justify;
+}
+
+/* About */
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  background: #ebdbc8;
+  gap: 1.5rem;
+}
+
+.about-img {
+  flex: 1 1 17rem;
+}
+.about-text {
+  flex: 1 1 17rem;
+}
+
+.about-text h2 {
+  font-size: 1.2rem;
+  color: var(--second-color);
+}
+.about-text p {
+  margin: 0.5rem 0 1rem;
+  text-align: justify;
+}
+
+/* Contact */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social a {
+  font-size: 27px;
+  margin: 0.5rem;
+}
+
+.social a .bx {
+  padding: 5px;
+  color: #fff;
+  background: #000000;
+  border-radius: 50%;
+}
+
+.social a .bx:hover {
+  background: var(--main-color);
+}
+
+.links {
+  margin: 1rem 0 1rem;
+}
+
+.links a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--second-color);
+  padding: 1rem;
+}
+
+.links a:hover {
+  color: var(--main-color);
+}
+
+.contact p {
+  text-align: center;
+}
+.course-category {
+  flex: 1 1 45%; /* Adjusts the width of each category */
+  margin: 1rem; /* Adds margin around each category */
+}
+
+.course-category h2 {
+  text-align: center;
+  color: rgb(31, 15, 155);
+  border: 2px solid rgb(44, 9, 41); /* Adjust the width, style, and color as needed */
+  padding: 10px; /* Optional: adds space between the text and the border */
+}
+
+.Courses-container {
+  display: flex;
+  justify-content: space-between; /* Space between the two categories */
+}
+
+.Courses-container .box {
+  background: var(--second-color); /* Change background for better visibility */
+  color: #fff; /* Text color for better contrast */
+}
+
+footer {
+  position: fixed; /* Fixes the footer at the bottom */
+  bottom: 0; /* Aligns it to the bottom of the viewport */
+  left: 0; /* Aligns it to the left of the viewport */
+  width: 100%; /* Makes the footer cover the full width of the screen */
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-around; /* Distributes buttons evenly */
+  background-color: #131010; /* Optional: background color for visibility */
+  padding: 5px 0; /* Optional: padding for spacing */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+  z-index: 1000; /* Ensures it stays above other content */
+}
+
+button {
+  flex: 1; /* Makes buttons take equal space */
+  margin: 0 5px; /* Optional: margin between buttons */
+  padding: 10px; /* Optional: padding for buttons */
+  border: none; /* Optional: removes default border */
+  background-color: #007BFF; /* Optional: button background color */
+  color: white; /* Optional: button text color */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  border-radius: 25px; /* Adjust this value for more or less oval shape */
+}
+button:hover {
+  background-color: #5f6466; /* Optional: darker color on hover */
+}
+@media (max-width: 1150px) {
+  header {
+    padding: 18px 7%;
+  }
+  section {
+    padding: 50px 7%;
+  }
+  .home-text h1 {
+    font-size: 3rem;
+  }
+  .home-text h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 18px 4%;
+  }
+  section {
+    padding: 50px 4%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 11px 4%;
+  }
+  #menu-icon{
+    display: initial;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: -500px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 4px 4px rgb(14 55 54 / 14%);
+    border-top: 2px solid var(--main-color);
+    transition: 0.2s;
+    text-align: left;
+  }
+
+  .navbar.active {
+    top: 100%;
+  }
+
+  .navbar a {
+    padding: 1.5rem;
+    display: block;
+    color: var(--second-color);
+  }
+  
+  .home-text span{
+    font-size: 0.9rem;
+  }
+  .home-text h1{
+    font-size: 2.4rem;
+  }
+  .home-text h2{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+    .home-text{
+        padding-top: inherit;
+    }
+
+    .Courses-container .box{
+        margin-top: 6rem;
+    }
+
+    .heading h1{
+        font-size: 1.5rem;
+    }
+
+    .heading span{
+        font-size: 2rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media (max-width: 364px) {
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+}
