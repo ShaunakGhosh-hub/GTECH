@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of HTML, CSS, and JavaScript</title>
+    <style>
+        /* CSS Basics */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a6edff;
+            color: #333;
+        }
+
+        header {
+            background-color: #060606;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        section {
+            margin: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #444;
+        }
+        h3{
+            color: pink;
+        }
+        h4{
+            color: red;
+        }
+
+        .example {
+            background-color: #e8f5e9;
+            border-left: 5px solid #4caf50;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Basics of HTML, CSS, and JavaScript</h1>
+        <p>Understanding the building blocks of web development.</p>
+        <h4>To get acess of the full content click DOWNLOAD</h4>
+        <h3>Click the DOWNLOAD button to Get all videos and notes at Rs 269</h2>
+
+    </header>
+    <a href="https://t.me/shaunak18" style="text-decoration: none;">
+        <button style="font-size: 15px; background-color: #f2ff00; color: #000000; padding: 5px 10px; border: none; border-radius: 5px; position: absolute; top: 0; left: 92%; transform: translateX(-50%);">
+          Download Notes
+        </button>
+      </a>
+    <!-- HTML Section -->
+    <section id="html">
+        <h2>1. HTML Basics</h2>
+        <p>HTML (HyperText Markup Language) is the structure of web pages.</p>
+
+        <!-- HTML Example -->
+        <div class="example">
+            <h3>Example of HTML Tags</h3>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My First Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, World!&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+        &lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+        </div>
+
+        <h3>Common HTML Tags</h3>
+        <ul>
+            <li>&lt;h1&gt; to &lt;h6&gt;: Headings</li>
+            <li>&lt;p&gt;: Paragraph</li>
+            <li>&lt;a&gt;: Link</li>
+            <li>&lt;img&gt;: Image</li>
+            <li>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;: Lists</li>
+        </ul>
+    </section>
+
+    <!-- CSS Section -->
+    <section id="css">
+        <h2>2. CSS Basics</h2>
+        <p>CSS (Cascading Style Sheets) is used to style web pages.</p>
+
+        <!-- CSS Example -->
+        <div class="example">
+            <h3>Example of CSS Styling</h3>
+            <pre>
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    color: green;
+    font-size: 16px;
+}</pre>
+        </div>
+
+        <h3>Key CSS Properties</h3>
+        <ul>
+            <li>color: Sets text color.</li>
+            <li>background-color: Sets background color.</li>
+            <li>font-size: Changes text size.</li>
+            <li>margin: Space outside the element.</li>
+            <li>padding: Space inside the element.</li>
+        </ul>
+    </section>
+
+    <!-- JavaScript Section -->
+    <section id="javascript">
+        <h2>3. JavaScript Basics</h2>
+        <p>JavaScript is a programming language for dynamic and interactive web content.</p>
+
+        <!-- JavaScript Example -->
+       
+        </div>
+
+        <h3>JavaScript Interactivity Example</h3>
+        <p>Type your name and see it displayed below:</p>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button onclick="displayGreeting()">Submit</button>
+        <p id="greeting"></p>
+
+        <script>
+            function displayGreeting() {
+                const name = document.getElementById('nameInput').value;
+                document.getElementById('greeting').innerText = 'Hello, ' + name + '!';
+            }
+        </script>
+
+        <h3>JavaScript Key Concepts</h3>
+        <ul>
+            <li>Variables: var, let, const</li>
+            <li>Functions: Function blocks for reusability</li>
+            <li>Events: onClick, onChange, etc.</li>
+            <li>DOM Manipulation: Access and update HTML elements</li>
+        </ul>
+    </section>
+
+    <!-- Practice Section -->
+    <section id="practice">
+        <h2>4. Practice Project</h2>
+        <p>Combine HTML, CSS, and JavaScript to create a small interactive app.</p>
+        <p>Simple counter app:</p>
+
+        <div>
+            <button onclick="decrementCounter()">-</button>
+            <span id="counter">0</span>
+            <button onclick="incrementCounter()">+</button>
+        </div>
+        <br/>
+        <div class="example">
+            <h3>Example of JavaScript Button</h3>
+            <p>Click the button to display a message:</p>
+            <button onclick="displayMessage()">Click Me!</button>
+            <p id="message"></p>
+
+            <script>
+                function displayMessage() {
+                    document.getElementById('message').innerText = 'Button Clicked!';
+                }
+            </script>
+
+        <script>
+            let counter = 0;
+
+            function incrementCounter() {
+                counter++;
+                document.getElementById('counter').innerText = counter;
+            }
+
+            function decrementCounter() {
+                counter--;
+                document.getElementById('counter').innerText = counter;
+            }
+        </script>
+    </section>
+</body>
+
+</html>
