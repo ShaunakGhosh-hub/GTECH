@@ -350,7 +350,7 @@ header {
   color: #fff; /* Text color for better contrast */
 }
 .btn {
-  margin-right: 25px; /* Adjust the value as needed */
+  margin-right: -13px; /* Adjust the value as needed */
 }
 
 footer {
