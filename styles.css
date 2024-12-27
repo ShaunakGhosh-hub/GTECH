@@ -465,6 +465,9 @@ button:hover {
     .about{
         flex-direction: column-reverse;
     }
+    .btn {
+          margin-right: 25px; /* Adjust the value as needed */
+    }
 
 }
 
