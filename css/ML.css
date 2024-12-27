@@ -108,6 +108,7 @@ h4 {
     #toggleMenu {
         display: block;
         position: fixed;
+        font-size: 28px;
 
     }
     main {
